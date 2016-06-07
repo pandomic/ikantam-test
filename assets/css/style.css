@@ -1,0 +1,236 @@
+/**
+ * Test application basic stylesheet.
+ * @author Vlad Gramuzov <vlad.gramuzov@gmail.com>
+ */
+
+/**
+ * Reseting elements style.
+ */
+* {
+    border: 0;
+    padding: 0;
+    outline: 0;
+    margin: 0;
+}
+/**
+ * Base area params.
+ */
+html, body {
+    width: 100%;
+    height: 100%;
+}
+/**
+ * Page settings.
+ */
+body {
+    background: #2d313f;
+    font-family: Geneva, Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
+/**
+ * Base links settings.
+ */
+a, a:visited, a:active {
+    font-size: 1em;
+    color: #ffffff;
+    text-decoration: none;
+}
+a:hover {
+    color: #e86464;
+    text-decoration: underline;
+}
+
+/**
+ * Main page content styles.
+ */
+main {
+    padding: 20px;
+    position: relative;
+    margin: 0 auto;
+    max-width: 600px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    
+}
+main .logo {
+    font-weight: bold;
+    font-size: 2em;
+    color: #ffffff;
+    text-align: center;
+}
+main h1 {
+    font-size: 1.5em;
+    color: #ffffff;
+    font-weight: normal;
+    text-align: center;
+    margin: 10px 0 20px 0;
+}
+
+/**
+ * Inputs style.
+ */
+input {
+    background: #ffffff;
+    font-size: 1em;
+    padding:0 10px;
+    color: #2d313f;
+    display: block;
+    width: 100%;
+    height: 40px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; 
+}
+::-webkit-input-placeholder {
+    color: #cfcfcf;
+}
+:-moz-placeholder {
+   color: #cfcfcf;
+}
+::-moz-placeholder {
+   color: #cfcfcf;
+}
+:-ms-input-placeholder {
+   color: #cfcfcf;
+}
+button {
+    margin-top: 20px;
+    display: block;
+    background: #e86464;
+    color: #ffffff;
+    width: 100%;
+    height: 40px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+/**
+ * Data row style.
+ */
+.data-row label {
+    display: none;
+}
+.data-divider {
+    height: 4px;
+    width: 100%;
+}
+
+/**
+ * Advanced links styles.
+ */
+a.signup {
+    text-align: center;
+    display: block;
+    margin-top: 15px;
+}
+a.remove, a.remove:hover, a.remove:active {
+    background:transparent;
+    text-decoration: none;
+}
+
+/**
+ * Error and info messages styles.
+ */
+.error, .info {
+    padding: 10px;
+    color: #ffffff;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+.error {
+    background: #e86464;
+    border: 1px dotted #af3535;
+}
+.info {
+    background: #92d63a;
+    border: 1px dotted #5b8c1c;
+}
+
+/**
+ * File input settings.
+ */
+label.fake-loader {
+    background: #ffffff;
+    font-size: 1em;
+    padding:0 10px;
+    color: #cfcfcf;
+    display: block;
+    width: 100%;
+    height: 40px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; 
+    
+}
+label.fake-loader span {
+    display: block;
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+input.fake-loader {
+    display: none;
+}
+
+/**
+ * Some header menu settings.
+ */
+header {
+    height: 40px;
+    width: 100%;
+    background: #e86464;
+    position: fixed;
+    top: 0;
+}
+header ul {
+    max-width: 600px;
+    height: 40px;
+    display: block;
+    margin: 0 auto;
+    clear: both;
+}
+header ul li {
+    display: block;
+    float: left;
+    height: 40px;
+    padding: 0 10px;
+}
+header ul li a {
+    display: block;
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+header ul li:hover,
+header ul li.active
+{
+    background: #ffffff;
+}
+header ul li:hover a,
+header ul li.active a{
+    color: #e86464;
+    text-decoration: underline;
+}
+
+/**
+ * Single file style.
+ */
+.file {
+    border-bottom: 1px dotted #ffffff;
+    padding: 5px;
+}

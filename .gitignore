@@ -1,0 +1,5 @@
+/composer.json
+/phpunit.xml
+/vendor/*
+/tests/*
+/sources/settings/settings.php
